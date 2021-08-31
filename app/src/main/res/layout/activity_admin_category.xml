@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/naru1"
     tools:context=".AdminCategoryActivity">
     <TextView
         android:id="@+id/slogan_category"
@@ -11,11 +12,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="Add New Product"
+        android:textColor="@android:color/holo_blue_bright"
         android:textAlignment="center"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textStyle="italic"
         />
     <LinearLayout
         android:id="@+id/linear1_category_layout"
@@ -64,13 +66,12 @@
         android:layout_above="@+id/admin_logout_btn"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="12dp"
         android:background="@color/colorPrimaryDark"
         android:text="Check New Orders"
-        android:textColor="@android:color/white"
-        android:textSize="25dp"
         android:textAllCaps="false"
-        />
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/admin_logout_btn"
@@ -82,7 +83,7 @@
         android:layout_marginBottom="15dp"
         android:background="@color/colorPrimaryDark"
         android:text="Logout"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="25dp"
         android:textAllCaps="false"
         />
