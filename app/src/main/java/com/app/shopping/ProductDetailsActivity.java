@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +31,7 @@ import java.util.HashMap;
 public class ProductDetailsActivity extends AppCompatActivity {
     private Button addToCartButton;
     private ImageView productImage;
+    private EditText customField;
     private ElegantNumberButton numberButton;
     private TextView productPrice,productDescription,productName;
     private String productID="", state = "Normal";
@@ -45,6 +47,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         productName = (TextView) findViewById(R.id.product_name_details);
         productDescription = (TextView) findViewById(R.id.product_description_details);
         productPrice = (TextView) findViewById(R.id.product_price_details);
+        customField = (EditText) findViewById(R.id.custom_input);
         getProductDetails(productID);
         addToCartButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +82,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         cartMap.put("pid",productID);
         cartMap.put("pname",productName.getText().toString());
         cartMap.put("price",productPrice.getText().toString());
+        cartMap.put("Customer's choice", customField.getText().toString());
         cartMap.put("date",saveCurrentDate);
         cartMap.put("time",saveCurrentTime);
         cartMap.put("quantity",numberButton.getNumber());

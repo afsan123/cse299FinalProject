@@ -56,7 +56,7 @@
         android:id="@+id/settings_profile_image"
         android:layout_width="130dp"
         android:layout_height="150dp"
-        android:src="@drawable/sambalala"
+        android:src="@drawable/bad"
         android:layout_below="@+id/app_bar_settings"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
